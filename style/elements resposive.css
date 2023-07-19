@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1276px) {
+    .footer-wrap {
+        width: 90%;
+    }
+
+    footer > hr {
+        width: 90%;
+    }
+
+    .sec-content {
+        width: 95%;
+    }
+
+    .fit {
+        width: 40%;
+    }
+
+    .input-group {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .footer-wrap {
+        flex-wrap: wrap;
+    }
+
+    .footer-wrap > div:first-child {
+        width: 100%;
+    }
+
+    .footer-wrap > :nth-child(2) {
+        width: 47%;
+    }
+    
+    .footer-wrap > div:last-child {
+        width: 47%;
+    }
+
+    .sec-content {
+        flex-direction: column;
+        padding: 0 4%;
+    }
+
+    .sec-left,.sec-right {
+        width: 100%;
+    }
+
+    .new-default {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .new-small {
+        width: 70%;
+    }
+
+    .list-flexed > div ul > li {
+        font-size: 19px;
+    }
+    
+    .list-flexed > div ol > li {
+        font-size: 19px;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .content {
+        width: 100%;
+        padding: 4% 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    header {
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer-wrap > :nth-child(2) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-wrap > div:last-child {
+        width: 100%;
+    }
+
+    .list-flexed {
+        flex-direction: column;
+    }
+
+    .list-flexed div {
+        width: 100%;
+    }
+
+    .list-flexed div:last-child {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    } 
+
+    .new-default {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .new-small {
+        width: 100%;
+    }
+
+    .flex-fill {
+        margin-bottom: 15px;
+    }
+
+    .form > .checkboxes {
+        flex-direction: column;
+    }
+
+    .form > :nth-child(3) {
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+
+@media only screen and (max-width:480px) {
+    .default {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .default-gray {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

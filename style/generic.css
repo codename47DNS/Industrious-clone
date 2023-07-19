@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+#page {
+    overflow-x: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: calibri light;
+}
+
+/* Nav Coding */
+nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 15px;
+    font-family: calibri light;
+    display: flex;
+}
+
+nav > div:first-child {
+    width: 50%;
+}
+
+nav > div:first-child h4 {
+    margin: 0;
+    padding: 0;
+}
+
+nav > div:last-child {
+    width: 50%;
+    text-align: right;
+}
+
+nav > div:last-child > span {
+    cursor: pointer;
+    color: rgba(204, 204, 204, 0.74);
+    transition: 0.5s;
+}
+/* End Nav Coding */
+
+/* Slider Coding */
+.slider {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #111111;
+    height: 100vh;
+    min-height: 200px;
+    color: rgba(255, 255, 255, 0.479);
+    transition: 0.5s;
+}
+
+.slider i {
+    margin-top: 10px;
+    margin-left: 90%;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slider ul {
+    margin-top: 30px;
+    padding: 0 30px;
+    list-style: none;
+} 
+
+.slider hr {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
+
+.slider a {
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+    font-family: calibri light;
+    transition: 0.5s;
+}
+
+.slider a:hover,.slider i:hover,nav > div:last-child > span:hover {
+    color: white;
+}
+/* End Slider Coding */
+
+/* Header Coding */
+header {
+    -webkit-display: flex;
+    display: flex;
+    background-image: linear-gradient(140deg, #7B171E,#111111 70%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 3% 0;
+}
+
+.content {
+    width: 690px;
+    font-family: calibri light;
+}
+
+.content h1 {
+    font-size: 58px;
+    transition: 2s;
+    opacity: 0;
+    font-weight: normal;
+}
+
+.content p {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.521);
+    line-height: 35px;
+    transition: 2s;
+    opacity: 0;
+}
+/* End Header Coding */
+
+/* Section Coding */
+section {
+    padding: 8% 0;
+    display: flex;
+    justify-content: center;
+}
+
+section > .sec-content {
+    width: 1000px;
+}
+
+.sec-content > h1,.sec-content > h2 {
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.sec-content > h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.sec-content > p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.767);
+    line-height: 25px;
+    text-align: justify;
+}
+/* End Section Coding */
+
+/* Start Footer Coding */
+footer {
+    background-color: #111111;
+    padding: 6% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrap {
+    width: 1130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrap > div{
+    width: 25%;
+}
+
+.footer-wrap > div:first-child {
+    width: 40%;
+}
+
+.footer-wrap > :nth-child(2) {
+    width: 30%;
+}
+
+.footer-wrap > div:last-child {
+    width: 20%;
+}
+
+.footer-wrap > div > h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footer-wrap > div > p,.footer-wrap > div > span {
+    color: rgba(255, 255, 255, 0.534);
+    line-height: 25px;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.footer-wrap > div > span {
+    line-height: 33px;
+}
+
+.footer-wrap > div > a {
+    color: rgba(255, 255, 255, 0.534);
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 29px;
+    display: block;
+}
+
+.footer-wrap > div > a:hover {
+    color: red;
+}
+
+.footer-wrap > div > a > i {
+    width: 29px;
+    height: 29px;
+    background-color: black;
+    color: white !important;
+    text-align: center;
+    line-height: 29px;
+    margin-right: 15px;
+}
+
+.footer-wrap > div > hr {
+    border: none;
+    margin: 11px 0;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.295);
+}
+
+footer > hr {
+    width: 1130px;
+    border: none;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.295);
+}
+
+footer > h3 {
+    color: rgba(255, 255, 255, 0.37);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+footer > h3:hover {
+    color: red;
+}
+/* End Footer Coding */
